@@ -1,4 +1,4 @@
-const themeSelect = document.getElementById("themeSelect");
+const themeSelect = document.querySelector(".themeSelect");
 const body = document.body;
 const imageSelect = document.querySelector(".logo");
 
