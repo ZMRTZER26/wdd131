@@ -13,6 +13,9 @@ body {
     line-height: 1.5em;
     border: solid black, 1px; 
 }
+.dark div:first-of-type {
+    border: solid #eee, 1px; 
+}
 .title {
     text-align: center;
     letter-spacing: 0.25em;
@@ -24,6 +27,10 @@ h2 {
     font-weight: 500;
     border-bottom: solid black;
     border-width: 1px;
+}
+.dark h2 {
+    color: #1fa6ff;
+    border-bottom: solid #eee;
 }
 li {
     margin: 20px 0;
