@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+* {
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #52489c;
+    --secondary-color: #59c3c3;
+    --accent-color: #f45b69;
+    --text-dark: #333;
+    --text-light: white;
+    --primary-font: Arial, Helvetica,sans-serif;
+    --secondary-font: Mooli, san-serif;
+    }
+body {
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+    }
+a:link{
+    color: var(--text-light);
+}
+a:visited {
+    color: var(--accent-color);
+}
+header {
+    background-color: var(--primary-color);
+    padding-bottom: 1em;
+    color: var(--text-light);
+    display: flex;
+    flex-direction: column;
+}
+h1, button, footer, nav {
+    text-align: center;
+}  
+h1 {
+    font-family: var(--secondary-font);
+}
+button {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: larger;
+    padding-bottom: 1em;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5em;
+}
+
+.gallery-image {
+    padding: 1em;
+}
+img {
+    width: 100%;
+    border: 5px solid var(--secondary-color);
+    box-shadow: 5px 5px;
+    object-fit: cover;
+}
+footer {
+    color: var(--text-light);
+    background-color: var(--primary-color);
+    padding: 5px;        
+}
+
+@media screen and (min-width: 700px) {
+    nav {
+        display: none;
+    }
+    .gallery {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+    }
+    footer {
+        text-align: justify;
+        padding-left: 5em;
+    }
+    .gallery-image {
+        display: inline-block;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    button {
+        display: none;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    a:link{
+        padding-right: 1em;
+    }
+}
