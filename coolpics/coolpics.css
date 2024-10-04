@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
-* {
-    box-sizing: border-box;
-}
 :root {
     --primary-color: #52489c;
     --secondary-color: #59c3c3;
@@ -46,7 +43,6 @@ nav {
     flex-direction: column;
     line-height: 1.5em;
 }
-
 .gallery-image {
     padding: 1em;
 }
@@ -66,19 +62,17 @@ footer {
     nav {
         display: none;
     }
-    .gallery {
+    .gallery-flexbox {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-
+    }
+    .gallery-image {
+        flex: 1 1 calc(33.33% - 20px);
     }
     footer {
         text-align: justify;
         padding-left: 5em;
-    }
-    .gallery-image {
-        display: inline-block;
-        justify-content: center;
     }
 }
 
@@ -93,5 +87,8 @@ footer {
     }
     a:link{
         padding-right: 1em;
+    }
+    .gallery-image {
+        flex: 1 1 calc(25% - 20px);
     }
 }
