@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
 :root {
     --primary-color: #52489c;
-    --secondary-color: #59c3c3;
+    --secondary-color: #62dddd;
     --accent-color: #f45b69;
     --text-dark: #333;
     --text-light: white;
@@ -11,6 +11,7 @@
 body {
     font-family: var(--primary-font);
     font-size: 1.2em;
+    background-color: var(--secondary-color);
     }
 a:link{
     color: var(--text-light);
@@ -19,7 +20,7 @@ a:visited {
     color: var(--accent-color);
 }
 header {
-    background-color: var(--primary-color);
+    background: var(--primary-color);
     padding-bottom: 1em;
     color: var(--text-light);
     display: flex;
@@ -48,8 +49,8 @@ nav {
 }
 img {
     width: 100%;
-    border: 5px solid var(--secondary-color);
-    box-shadow: 5px 5px;
+    border: 5px solid var(--text-light);
+    box-shadow: 5px 5px 5px;
     object-fit: cover;
 }
 footer {
