@@ -26,17 +26,16 @@ body {
 .close-viewer {
     color: var(--text-light);
     grid-row: 1;
-    display: block;
     justify-self: flex-end;
-    align-self: flex-end;
     margin-right: 1em;
+    cursor: pointer;
 }
 .viewer img {
-    max-height: 100%;
+
     grid-row: 2;
     max-width: 90%;
     justify-self: center;
-    object-fit: cover;
+    object-fit: contain;
 }
 a:link{
     color: var(--text-light);
@@ -105,15 +104,19 @@ footer {
 
 @media screen and (min-width: 1000px) {
     .viewer {
-        padding: 1em;
-        width: 80%;
+        max-width: 80%;
+        max-height: 90vh;
         justify-content: center;
         align-self: center;
         justify-self: center;
+        padding-bottom: 2em;
     }
     .viewer img {
-        padding: 1em;
-        width: 100%;
+        max-height: 90vh;
+    }
+    .close-viewer {
+        font-size: 1.5em;
+        padding-top: 1em;
     }
     .menu-button {
         display: none;

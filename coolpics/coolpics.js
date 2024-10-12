@@ -36,7 +36,6 @@ function viewHandler(event) {
 
         // construct the new image file name by adding "-full.jpeg" to the first part of the array from the previous step
         let newSource = imageParts[0] + "-full.jpeg";
-        image.setAttribute("src", newSource);
 
         // insert the viewerTemplate into the top of the body element
         // (element.insertAdjacentHTML("afterbegin", htmltoinsert))
@@ -48,6 +47,12 @@ function viewHandler(event) {
 
 }
 
+function closeViewer() {
+    const viewer = document.querySelector(".viewer");
+    if (viewer) {
+        viewer.remove();
+    }
+}
 // Select all images inside the gallery
 const galleryImages = document.querySelectorAll(".gallery-image img");
 
@@ -56,9 +61,4 @@ galleryImages.forEach(image => {
     image.addEventListener("click", viewHandler);
 });
 
-function closeViewer() {
-    const viewer = document.querySelector(".viewer");
-    if (viewer) {
-        viewer.remove();
-    }
-}
+
