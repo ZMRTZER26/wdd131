@@ -13,6 +13,31 @@ body {
     font-size: 1.2em;
     background-color: var(--secondary-color);
     }
+.viewer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: grid;
+    z-index: 10;
+}
+.close-viewer {
+    color: var(--text-light);
+    grid-row: 1;
+    display: block;
+    justify-self: flex-end;
+    align-self: flex-end;
+    margin-right: 1em;
+}
+.viewer img {
+    max-height: 100%;
+    grid-row: 2;
+    max-width: 90%;
+    justify-self: center;
+    object-fit: cover;
+}
 a:link{
     color: var(--text-light);
 }
@@ -39,15 +64,18 @@ button {
     font-size: larger;
     padding-bottom: 1em;
 }
-nav {
+.menu {
     display: flex;
     flex-direction: column;
     line-height: 1.5em;
 }
+.hide {
+    display: none;
+}
 .gallery-image {
     padding: 1em;
 }
-img {
+.gallery-image img {
     width: 100%;
     border: 5px solid var(--text-light);
     box-shadow: 5px 5px 5px;
@@ -60,9 +88,6 @@ footer {
 }
 
 @media screen and (min-width: 700px) {
-    nav {
-        display: none;
-    }
     .gallery-flexbox {
         display: flex;
         flex-flow: row wrap;
@@ -70,6 +95,7 @@ footer {
     }
     .gallery-image {
         flex: 1 1 calc(33.33% - 20px);
+        max-width: 415px;
     }
     footer {
         text-align: justify;
@@ -78,10 +104,21 @@ footer {
 }
 
 @media screen and (min-width: 1000px) {
-    button {
+    .viewer {
+        padding: 1em;
+        width: 80%;
+        justify-content: center;
+        align-self: center;
+        justify-self: center;
+    }
+    .viewer img {
+        padding: 1em;
+        width: 100%;
+    }
+    .menu-button {
         display: none;
     }
-    nav {
+    .menu {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -91,5 +128,6 @@ footer {
     }
     .gallery-image {
         flex: 1 1 calc(25% - 20px);
+        max-width: none;
     }
 }
