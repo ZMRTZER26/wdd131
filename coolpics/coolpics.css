@@ -31,7 +31,6 @@ body {
     cursor: pointer;
 }
 .viewer img {
-
     grid-row: 2;
     max-width: 90%;
     justify-self: center;
