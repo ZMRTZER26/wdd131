@@ -26,6 +26,23 @@ header h1 {
     padding-bottom: 1em;
 }
 
+.skiptocontent a {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 0.5em;
+    z-index: 100;
+    text-decoration: none;
+}
+.skiptocontent a:focus {
+	left: 1em;
+    top: 1em;
+    outline: 2px solid var(--accent-color);
+    text-decoration: underline;
+}
+
 nav {
     border-top: 2px solid var(--accent-color);
     border-bottom: 2px solid var(--accent-color);
