@@ -19,7 +19,6 @@
 body {
     font-family: var(--primary-font);
     color: var(--text-dark);
-    background-color: var(--text-light);
 }
 
 header, main, footer {
@@ -83,9 +82,9 @@ main {
 }
 
 .recipe-item {
+    background-color: var(--text-light);
     border: 2px solid black;
     border-radius: 20px;
-    background-color: var(--secondary-color);
     display: flex;
     flex-flow: column-reverse;
     gap: 1em;
@@ -145,6 +144,7 @@ footer img {
     height: 50px;
     cursor: pointer;
     margin-bottom: 10px;
+    background-color: var(--primary-color);
 }
 
 .flaticon a {
@@ -206,6 +206,12 @@ footer img {
 
     .rating {
         order: 3;
+    }
+
+    footer {
+        flex-flow: row-reverse;
+        justify-content: space-around;
+        gap: 5em;        
     }
 }
 
