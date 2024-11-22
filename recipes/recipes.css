@@ -93,6 +93,7 @@ main {
     text-align: justify;
     padding: 20px;
     max-width: 960px;
+    max-height: 960px;
     width: fit-content;
 }
 
