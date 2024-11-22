@@ -92,7 +92,7 @@ main {
     align-items: flex-start;
     text-align: justify;
     padding: 20px;
-    max-width: fit-content;
+    max-width: 960px;
     width: fit-content;
 }
 
