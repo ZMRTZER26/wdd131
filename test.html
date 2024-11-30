@@ -1,15 +1,81 @@
-<!--Test HTML so that I don't ruin what I already have working for an assignment-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="test.css" />
-    <script src="test.js" defer></script>
-
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F8F8F8;
+            margin: 0;
+            color: #333333;
+        }
+        header {
+            background-color: #4A90E2;
+            color: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+        }
+        header p {
+            color: #AEE8FF;
+            margin-top: 10px;
+        }
+        button {
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin: 10px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .primary-btn {
+            background-color: #4A90E2;
+            color: #FFFFFF;
+        }
+        .accent-btn {
+            background-color: #CAB8E5;
+            color: #333333;
+        }
+        .card {
+            background-color: #AEE8FF;
+            padding: 20px;
+            border-radius: 20px;
+            color: #333333;
+            margin: 20px;
+            width: 300px;
+        }
+        .card h2 {
+            color: #CAB8E5;
+        }
+        .card button {
+            background-color: #9FEACD;
+            color: #333333;
+        }
+        footer {
+            background-color: #333333;
+            color: #F8F8F8;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <h1>Welcome to Our Guessing Game!</h1>
+        <p>Have fun and test your skills!</p>
+    </header>
+
+    <div style="padding: 20px;">
+        <button class="primary-btn">Start Game</button>
+        <button class="accent-btn">Learn More</button>
+
+        <div class="card">
+            <h2>Featured Guess</h2>
+            <p>Can you figure out who this is?</p>
+            <button>Try Now</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Guess Who Game</p>
+    </footer>
 </body>
 </html>
