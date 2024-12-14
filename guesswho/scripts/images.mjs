@@ -1,0 +1,40 @@
+// images.mjs
+
+export const imageCollection = {
+  originalImages: [
+    { src: "./images/CaptainCube.png", name: "Captain Cube", link: "https://www.twitch.tv/captain_cube" },
+    { src: "./images/HootyHoo.jpg", name: "Hooty Hoo", link: "https://www.twitch.tv/hootyhoovt" },
+    { src: "./images/JarudeXSandstorm.jpg", name: "Jarude X Sandstorm", link: "https://www.twitch.tv/jarudexsandstorm" },
+    { src: "./images/JeanFaymas.jpg", name: "Jean Faymas", link: "https://www.twitch.tv/jeanfaymas" },
+    { src: "./images/Junk.jpg", name: "Junk", link: "https://www.twitch.tv/junk" },
+    { src: "./images/M0YASI.png", name: "M0YASI", link: "https://www.twitch.tv/m0yasi" },
+    { src: "./images/ProximalScrub.jpg", name: "Proximal Scrub", link: "https://www.twitch.tv/proximal_scrub" },
+    { src: "./images/Shuumi.jpg", name: "Shuumi", link: "https://www.twitch.tv/shuuuumi" },
+    { src: "./images/UWOSLAB.jpg", name: "UWOSLAB", link: "https://www.twitch.tv/uwoslab" },
+    { src: "./images/vividlyVIVI.jpg", name: "vividlyVIVI", link: "https://www.twitch.tv/vividlyvivi" },
+  ],
+  images: [
+    { src: "./images/CaptainCube.png", name: "Captain Cube", link: "https://www.twitch.tv/captain_cube" },
+    { src: "./images/HootyHoo.jpg", name: "Hooty Hoo", link: "https://www.twitch.tv/hootyhoovt" },
+    { src: "./images/JarudeXSandstorm.jpg", name: "Jarude X Sandstorm", link: "https://www.twitch.tv/jarudexsandstorm" },
+    { src: "./images/JeanFaymas.jpg", name: "Jean Faymas", link: "https://www.twitch.tv/jeanfaymas" },
+    { src: "./images/Junk.jpg", name: "Junk", link: "https://www.twitch.tv/junk" },
+    { src: "./images/M0YASI.png", name: "M0YASI", link: "https://www.twitch.tv/m0yasi" },
+    { src: "./images/ProximalScrub.jpg", name: "Proximal Scrub", link: "https://www.twitch.tv/proximal_scrub" },
+    { src: "./images/Shuumi.jpg", name: "Shuumi", link: "https://www.twitch.tv/shuuuumi" },
+    { src: "./images/UWOSLAB.jpg", name: "UWOSLAB", link: "https://www.twitch.tv/uwoslab" },
+    { src: "./images/vividlyVIVI.jpg", name: "vividlyVIVI", link: "https://www.twitch.tv/vividlyvivi" },
+  ],
+  webpImages: [
+    { src: "./images/webp/CaptainCube.webp", name: "Captain Cube", link: "https://www.twitch.tv/captain_cube" },
+    { src: "./images/webp/HootyHoo.webp", name: "Hooty Hoo", link: "https://www.twitch.tv/hootyhoovt" },
+    { src: "./images/webp/JarudeXSandstorm.webp", name: "Jarude X Sandstorm", link: "https://www.twitch.tv/jarudexsandstorm" },
+    { src: "./images/webp/JeanFaymas.webp", name: "Jean Faymas", link: "https://www.twitch.tv/jeanfaymas" },
+    { src: "./images/webp/Junk.webp", name: "Junk", link: "https://www.twitch.tv/junk" },
+    { src: "./images/webp/M0YASI.webp", name: "M0YASI", link: "https://www.twitch.tv/m0yasi" },
+    { src: "./images/webp/ProximalScrub.webp", name: "Proximal Scrub", link: "https://www.twitch.tv/proximal_scrub" },
+    { src: "./images/webp/Shuumi.webp", name: "Shuumi", link: "https://www.twitch.tv/shuuuumi" },
+    { src: "./images/webp/UWOSLAB.webp", name: "UWOSLAB", link: "https://www.twitch.tv/uwoslab" },
+    { src: "./images/webp/vividlyVIVI.webp", name: "vividlyVIVI", link: "https://www.twitch.tv/vividlyvivi" },
+  ],
+};

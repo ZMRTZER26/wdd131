@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore our vibrant gallery featuring amazing Vtuber icons.">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/gallery.css" media="print" onload="this.media='all'">
+  <script src="./scripts/gallery.js" defer type="module"></script>
+  <link rel="icon" href="./images/favicon.png" type="image/png">
+  <link rel="preload" as="image" href="./images/CaptainCube.png">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./images//webp/logo2.webp" alt="Logo" width="300" height="150">
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gallery.html" class="active">Gallery</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Gallery</h1>
+    <div id="gallery-container"></div>
+    <div id="overlay">
+      <div id="overlay-content">
+        <button id="close-overlay">&times;</button>
+        <img id="enlarged-image" src="" alt="Enlarged View">
+        <p id="image-name"></p>
+        <a id="image-link" href="#" target="_blank">View More</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Your Website</p>
+    <div id="social-icons">
+      <a href="https://twitch.tv" target="_blank" aria-label="Twitch">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#9146FF" width="32" height="32">
+          <path d="M4 2L2 6v14h6v2h3l2-2h4l5-5V2H4zm15 13h-3l-2 2h-3v-2H7V4h12v11z"/>
+          <path d="M15 6h2v5h-2zM11 6h2v5h-2z"/>
+        </svg>
+      </a>
+      <a href="https://twitter.com" target="_blank" aria-label="X (Twitter)">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1DA1F2" width="32" height="32">
+          <path d="M22.46 6.03c-.77.35-1.6.58-2.46.69a4.17 4.17 0 0 0 1.83-2.3 8.32 8.32 0 0 1-2.63 1 4.15 
+          4.15 0 0 0-7.07 3.78A11.75 11.75 0 0 1 3.1 4.74a4.15 4.15 0 0 0 1.28 5.54 4.16 4.16 0 0 1-1.88-.52v.05a4.15 
+          4.15 0 0 0 3.32 4.07 4.2 4.2 0 0 1-1.87.07 4.15 4.15 0 0 0 3.87 2.88A8.33 8.33 0 0 1 2 18.39 11.78 11.78 0 0 
+          0 8.29 20c7.66 0 11.85-6.35 11.85-11.85 0-.18-.01-.36-.02-.54a8.47 8.47 0 0 0 2.34-2.19z"/>
+        </svg>
+      </a>
+      <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FF0000" width="32" height="32">
+          <path d="M21.8 8.01s-.2-1.41-.82-2.04c-.78-.82-1.65-.83-2.05-.88C15.74 4.8 12 4.8 12 4.8h-.01s-3.74 
+          0-6.93.29c-.4.05-1.28.06-2.05.88-.62.63-.82 2.04-.82 2.04S2 9.72 2 11.42v1.15c0 1.7.2 3.41.2 3.41s.2 
+          1.41.82 2.04c.78.82 1.8.8 2.26.89 1.64.16 6.91.3 6.91.3s3.74-.01 6.93-.3c.4-.05 1.27-.06 
+          2.05-.88.62-.63.82-2.04.82-2.04s.2-1.71.2-3.41v-1.15c0-1.7-.2-3.41-.2-3.41zM10 14.9V8.9l5.27 3-5.27 3z"/>
+        </svg>
+      </a>
+    </div>    
+  </footer>
+</body>
+</html>
